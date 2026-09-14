@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="PlutoVest mark">
+  <defs>
+    <linearGradient id="pv-core" x1="18" y1="18" x2="78" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9d84ff"/>
+      <stop offset="0.55" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#3b2aa8"/>
+    </linearGradient>
+    <linearGradient id="pv-ring" x1="8" y1="70" x2="90" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14d19c" stop-opacity="0.15"/>
+      <stop offset="0.45" stop-color="#3ee6b8"/>
+      <stop offset="1" stop-color="#b8a5ff"/>
+    </linearGradient>
+    <radialGradient id="pv-shine" cx="0.32" cy="0.28" r="0.6">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="pv-front">
+      <rect x="0" y="48" width="96" height="48"/>
+    </clipPath>
+  </defs>
+
+  <!-- back half of the orbital ring -->
+  <path d="M12 62 C 22 32, 74 20, 88 34" fill="none" stroke="url(#pv-ring)" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- planet -->
+  <circle cx="48" cy="48" r="24" fill="url(#pv-core)"/>
+  <circle cx="48" cy="48" r="24" fill="url(#pv-shine)"/>
+
+  <!-- rising growth path carved into the planet -->
+  <path d="M34 58 L42 49 L49 54 L62 38" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56 38 H62 V44" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- front half of the orbital ring, passing in front of the planet -->
+  <path d="M12 62 C 30 78, 66 84, 88 66" fill="none" stroke="url(#pv-ring)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- satellite -->
+  <circle cx="88" cy="34" r="4.5" fill="#3ee6b8"/>
+  <circle cx="88" cy="34" r="8" fill="none" stroke="#3ee6b8" stroke-opacity="0.35" stroke-width="1.5"/>
+</svg>

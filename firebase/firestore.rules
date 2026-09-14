@@ -1,0 +1,12 @@
+rules_version = '2';
+
+// All reads and writes go through the Next.js server with the Firebase Admin SDK,
+// which bypasses these rules. Client SDKs are used for Auth only, so the database
+// is closed to direct client access.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

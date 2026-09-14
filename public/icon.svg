@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <defs>
+    <linearGradient id="i-core" x1="18" y1="18" x2="78" y2="78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9d84ff"/>
+      <stop offset="0.55" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#3b2aa8"/>
+    </linearGradient>
+    <linearGradient id="i-ring" x1="8" y1="70" x2="90" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14d19c" stop-opacity="0.15"/>
+      <stop offset="0.45" stop-color="#3ee6b8"/>
+      <stop offset="1" stop-color="#b8a5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="22" fill="#0a0e1a"/>
+  <path d="M14 62 C 24 34, 72 22, 86 36" fill="none" stroke="url(#i-ring)" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="48" cy="48" r="23" fill="url(#i-core)"/>
+  <path d="M35 58 L42.5 49.5 L49.5 54.5 L61.5 39" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M56 39 H61.5 V44.5" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 62 C 30 78, 64 84, 86 66" fill="none" stroke="url(#i-ring)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="86" cy="36" r="4.5" fill="#3ee6b8"/>
+</svg>
